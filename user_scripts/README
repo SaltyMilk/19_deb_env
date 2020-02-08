@@ -1,0 +1,6 @@
+Debian VM
+=========
+Setup docker with './docker-setup.sh'
+Setup the VM with './setup_vm.sh'
+Log to the VM with './log.sh'
+Delete the VM with 'stop_vm.sh'
