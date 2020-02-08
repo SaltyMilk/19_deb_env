@@ -1,2 +1,2 @@
-docker rm -f 19ctf
-docker image rm 19ctf_img
+docker rm -f 19deb
+docker image rm 19deb_img
