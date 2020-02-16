@@ -1,0 +1,9 @@
+19_DEB_ENV
+----------
+
+A set of script to quickly launch a debian env which allows you to use a debugger on the school's (42network) computers.
+By default gdb and lldb are installed if you need more tools add them in the dockerfile.
+
+To get started see user_scripts/README.
+
+Credits to Volt for user_script/docker_setup.sh.

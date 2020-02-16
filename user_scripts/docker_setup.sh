@@ -21,13 +21,13 @@ source ~/.zshrc
 
 mkdir -pv $MACHINE_STORAGE_PATH/cache
 if ! [ -f $MACHINE_STORAGE_PATH/cache/boot2docker.iso ]; then
-    echo "Downloading the VM system iso..."
-    curl -Lo $MACHINE_STORAGE_PATH/cache/boot2docker.iso https://github.com/boot2docker/boot2docker/releases/download/v19.03.5/boot2docker.iso 2> /dev/null 
-fi
+	    echo "Downloading the VM system iso..."
+		    curl -Lo $MACHINE_STORAGE_PATH/cache/boot2docker.iso https://github.com/boot2docker/boot2docker/releases/download/v19.03.5/boot2docker.iso 2> /dev/null 
+		fi
 
-killall -9 VBoxHeadless
-VBoxManage unregistervm --delete default 2> /dev/null 
-docker-machine rm default -y
+		killall -9 VBoxHeadless
+		VBoxManage unregistervm --delete default 2> /dev/null 
+	docker-machine rm default -y
 
 docker-machine create --driver virtualbox default
 eval $(docker-machine env default)
@@ -40,8 +40,8 @@ echo -e '\033[0;31m/!\ \033[0mYou \033[0;31mMUST\033[0m close and reopen a new t
 
 for i in 1 2 3 4 5
 do
-echo "Closing the terminal in $((5-$i+1))s, unless you CTRL-C (not recommended)"
-sleep 1
+	echo "Closing the terminal in $((5-$i+1))s, unless you CTRL-C (not recommended)"
+	sleep 1
 done
 
 kill -9 $PPID

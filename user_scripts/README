@@ -1,6 +1,7 @@
 Debian VM
 =========
-Setup docker with './docker-setup.sh'
-Setup the VM with './setup_vm.sh'
-Log to the VM with './log.sh'
-Delete the VM with 'stop_vm.sh'
+-Setup docker with './docker_setup.sh' (this will close your current terminal)
+-Setup the VM with './setup_vm.sh'
+-Log to the VM with './log.sh'
+-Stop the VM with 'stop_vm.sh'
+-STOP && Delete the VM  with 'delete_vm.sh'
