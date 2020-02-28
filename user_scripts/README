@@ -1,6 +1,7 @@
 Debian VM
 =========
 -Setup docker with './docker_setup.sh' (this will close your current terminal)
+	-> This one needs to be launched once every time you relog (Only works inside 42Network)
 -Setup the VM with './setup_vm.sh'
 -Log to the VM with './log.sh'
 -Stop the VM with 'stop_vm.sh'
